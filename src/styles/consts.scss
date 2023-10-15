@@ -1,0 +1,54 @@
+@import './fonts.scss';
+
+$forum-font: 'Forum';
+$manrope-font: 'Manrope';
+
+$background-main: #E2D3CE;
+
+$color-light: #CFE3D7;
+$color-middle-light: #CFE1E3;
+$color-middle: #E3D4CF;
+$color-dark: #633627;
+$color-middle-dark: #275D63;
+$color-font-light: #FCFCFC;
+
+@mixin h1-main {
+    font-size: 198px;
+    line-height: 65%;
+    letter-spacing: 4%;
+    color: $color-font-light;
+  }
+  @mixin h2-main {
+    font-size: 141px;
+    letter-spacing: 4%;
+    color: $color-font-light;
+  }
+  @mixin h3-main {
+    font-size: 60px;
+    line-height: 58;
+    color: $color-dark;
+  }
+
+  @mixin h4-main {
+    font-size: 26px;
+    letter-spacing: 4%;
+    color: $color-dark;
+  }
+  @mixin p-menu {
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: $color-dark;
+  }
+
+  @mixin p-heading {
+    @include font-styles($manrope-font);
+    font-size: 18px;
+    font-weight: light;
+    color: $color-middle-dark;
+  }
+  @mixin p-text {
+    @include font-styles($manrope-font);
+    font-size: 16px;
+    font-weight: regular;
+    color: $color-dark;
+  }
